@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22d827f094.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #ffffff" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: #ffffff" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I am <span>Tavini M</span><br>from Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>I'm a passionate Frontend Developer with a strong 
+                        foundation in the MERN stack (MongoDB, Express.js, React, Node.js). 
+                        I specialize in creating interactive, responsive, and visually 
+                        appealing websites that deliver seamless user experiences. 
+                        My expertise in HTML, CSS, JavaScript, and modern frameworks, 
+                        combined with the power of the MERN stack, allows me to turn complex 
+                        ideas into dynamic and efficient web applications. I'm driven by 
+                        creativity, problem-solving, and a commitment to excellence in every project.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024 - Present</span><br>Bsc.(Hons) in Information Technology - SLLIT</li>
+                                <li><span>2023 - 2024</span><br>Higher Diploma in Information Technology - SLIIT</li>
+                                <li><span>2021(2022)</span><br>G.C.E Advanced Level - Anula Vidyalaya</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------Services--------------------------------------------->
+
+    <div id = "services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>We specialize in creating responsive designs that work seamlessly 
+                        across all devices, ensuring a smooth user experience. 
+                        </p>
+                        <a href="#">Learn More</a>                
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Our Web Design Services offer customized, visually 
+                        appealing, and user-friendly websites tailored to 
+                        meet your business needs.</p>
+                        <a href="#">Learn More</a>                
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Our Mobile App Development Services provide end-to-end 
+                        solutions for building high-performance, feature-rich 
+                        mobile applications.</p>
+                        <a href="#">Learn More</a>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------Projects------------------------------------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Resource Booking System</h3>
+                        <p>You can book tickets online for your purpose.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Vehicle Services Management System</h3>
+                        <p>You can connect with our webiste for your vehicle detailing.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Astrological App</h3>
+                        <p>You can view my AstroSky app design for your implementation.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------------Contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope" style="color: #035596;"></i>taviniperera2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #035596;"></i>+94 70 429 7202</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: #035596;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #035596;"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp" style="color: #035596;"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok" style="color: #035596;"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" style="color: #035596;"></i></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn bt2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="902c4c90-8637-4c87-adbc-8a5d936f57a2">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Tavini. Made in <i class="fa-solid fa-heart" style="color: #035596;"></i> with html.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
