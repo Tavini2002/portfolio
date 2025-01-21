@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Services Management </title>
+    <link rel="stylesheet" href="workstyle.css">
+    <script src="https://kit.fontawesome.com/22d827f094.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #ffffff" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: #ffffff" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h4 class="sub-title">Resource Booking System</h4><br>
+            <div class="about-content">
+                <!-- Section 1: Images -->
+                <div class="image-section">
+                    <div class="about-section">
+                        <img src="images/w1.jpeg" alt="Resource 1">
+                    </div>
+                    <div class="about-section">
+                        <img src="images/w3.jpeg" alt="Resource 1">
+                    </div>
+                    <div class="about-section">
+                        <img src="images/w2.jpeg" alt="Resource 1">
+                    </div>
+                    <div class="about-section">
+                        <img src="images/w4.jpeg" alt="Resource 1">
+                    </div>
+                    <div class="about-section">
+                        <img src="images/w5.jpeg" alt="Resource 1">
+                    </div>
+                    <div class="about-section">
+                        <img src="images/w6.jpeg" alt="Resource 1">
+                    </div>
+                </div>
+    
+                <!-- Section 2: Description -->
+                <div class="description-section">
+                    <h3>How it Works</h3><br>
+                    <p>Developed a responsive website for the IWT module using HTML, CSS, and JavaScript to enhance front-end skills. Key features include:<br><br>
+                        
+                        <p class="bullets"><span>Responsive Design:</span> <br>Optimized for mobile and desktop views.</p>
+                        <p class="bullets"><span>Stylish Layout:</span><br> Modern CSS styling for a clean interface.</p>
+                        <p class="bullets"><span>Interactive Elements:</span><br> JavaScript for dynamic functionality (e.g., form validation, image sliders).</p><br>
+                    
+                        <p>This project showcases my ability to create user-friendly, interactive web interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright &copy; Tavini. Made in <i class="fa-solid fa-heart" style="color: #035596;"></i> with html.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
