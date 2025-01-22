@@ -105,12 +105,12 @@ nav ul li a:hover::after{
 .image-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
+    gap: 20px; /* Adjust gap between images */
+    justify-content: space-between; /* Ensure proper spacing */
 }
 .about-section{
-    width: calc(50% - 10px);             
-    max-width: 600px; 
+    width: calc(25% - 15px); /* Adjust width to fit 4 images per row */
+    max-width: 300px; /* Optional: Set a max-width if needed */
 }
 
 .description-section {
@@ -126,7 +126,7 @@ nav ul li a:hover::after{
 .description-section p{
     width: 100%;
     margin-top: 20px;
-    color:whitesmoke; 
+    color:whitesmoke;  
     text-align: left;  
 }
 
@@ -138,9 +138,9 @@ nav ul li a:hover::after{
     color: #035596;
 }
 img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; 
 }
 
 .about-section img{
@@ -268,5 +268,9 @@ nav .fa-solid{
     .description-section span{
         text-align: left;
         color: #035596;
+    }
+
+    .about-section {
+        width: calc(50% - 10px); /* 2 images per row */
     }
 }
