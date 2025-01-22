@@ -350,7 +350,6 @@ nav ul li a:hover::after{
 }
 
 .btn.btn2{
-    display: inline-block;
     background: #035596;
     font-size:large;
 }
@@ -459,4 +458,6 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+
+    
 }

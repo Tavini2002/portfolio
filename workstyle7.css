@@ -123,7 +123,7 @@ nav ul li a:hover::after{
     font-size: 30px;
     color: #e3e3e3;
 }
-.description-section p{
+.description-section li{
     width: 100%;
     margin-top: 20px;
     color:whitesmoke;  
@@ -257,14 +257,11 @@ nav .fa-solid{
         font-size: 30px;
     }
 
-    .description-section p{
-        font-size: 20px;
+    .description-section li{
+        font-size: 15px;
         text-align: justify;
     }
-   
-    #bullets{
-        text-align: left;
-    }
+
     .description-section span{
         text-align: left;
         color: #035596;

@@ -123,20 +123,26 @@ nav ul li a:hover::after{
     font-size: 30px;
     color: #e3e3e3;
 }
-.description-section p{
+.description-section li{
     width: 100%;
     margin-top: 20px;
     color:whitesmoke; 
     text-align: left;  
 }
 
-#bullets{
-    text-align: left;
+.description-section a{
+     color: #035596; 
+}
+
+.description-section a:hover{
+    text-decoration: none;
+    color:rgb(189, 17, 17); 
 }
 .description-section span{
     text-align: left;
     color: #035596;
 }
+
 img {
     width: 100%;
     height: auto;
@@ -257,16 +263,22 @@ nav .fa-solid{
         font-size: 30px;
     }
 
-    .description-section p{
-        font-size: 20px;
+    .description-section li{
+        font-size: 18px;
         text-align: justify;
     }
    
-    #bullets{
-        text-align: left;
-    }
     .description-section span{
         text-align: left;
         color: #035596;
+    }
+
+    .description-section a{
+        color: rgb(189, 17, 17); 
+        text-decoration: none;
+   }
+
+    .about-section {
+        width: calc(100% - 10px); /* 2 images per row */
     }
 }
